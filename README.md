@@ -64,6 +64,21 @@ http://127.0.0.1:8000
 
 This folder is ready to push as a GitHub repository. Do not commit real API keys. Use `.env.example` as the safe template.
 
+## Deploy On Render
+
+1. Push this repository to GitHub.
+2. Open Render and create a new Web Service from the GitHub repo.
+3. Use:
+
+```text
+Build Command: empty
+Start Command: python app.py
+```
+
+4. Add `OPENAI_API_KEY` as an environment variable in Render if you want real model responses.
+
+The app reads Render's `PORT` automatically.
+
 ## Resume Description
 
 Developed a conversational AI chatbot leveraging Python, Generative AI, and NLP for intelligent query handling. Built a polished web interface that supports natural language interaction, conversation memory, quick prompt actions, and context-aware response generation.

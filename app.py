@@ -11,8 +11,8 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from typing import Any
 
 
-HOST = "127.0.0.1"
-PORT = int(os.environ.get("CHATBOT_PORT", "8000"))
+HOST = os.environ.get("HOST", "0.0.0.0")
+PORT = int(os.environ.get("PORT", os.environ.get("CHATBOT_PORT", "8000")))
 MODEL = os.environ.get("OPENAI_MODEL", "gpt-4.1-mini")
 RUNTIME_API_KEY = ""
 
