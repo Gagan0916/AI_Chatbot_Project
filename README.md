@@ -71,7 +71,7 @@ This folder is ready to push as a GitHub repository. Do not commit real API keys
 3. Use:
 
 ```text
-Build Command: empty
+Build Command: pip install -r requirements.txt
 Start Command: python app.py
 ```
 
